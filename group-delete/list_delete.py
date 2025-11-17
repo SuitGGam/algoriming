@@ -1,0 +1,61 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+import random
+
+driver = webdriver.Chrome()
+wait = WebDriverWait(driver, 10)
+
+group_url = "https://www.acmicpc.net/group/workbook/24302"
+
+# 로그인 수동
+driver.get("https://www.acmicpc.net/login")
+print("로그인 후 5초 대기합니다...")
+time.sleep(5)
+
+while True:
+    driver.get(group_url)
+    time.sleep(random.randint(1, 4))
+
+    try:
+        # 1️⃣ 첫 번째 문제집 링크 찾기
+        first_workbook = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,
+            "body > div.wrapper > div.container.content > div > div:nth-child(4) > div > table > tbody > tr:nth-child(1) > td:nth-child(3) > a"
+        )))
+        href = first_workbook.get_attribute("href")
+        print(f"문제집 진입: {href}")
+        driver.get(href)
+        time.sleep(random.randint(1, 4))
+
+        # 2️⃣ 삭제 페이지로 이동 버튼 클릭
+        delete_page_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,
+            "body > div.wrapper > div.container.content > div > div:nth-child(4) > blockquote > div > a"
+        )))
+        delete_page_btn.click()
+        time.sleep(random.randint(1, 3))
+
+        # 3️⃣ 삭제 버튼 클릭 → 브라우저 prompt 발생
+        delete_btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#delete_button")))
+        delete_btn.click()
+        time.sleep(1)
+
+        # 4️⃣ JS prompt에 "삭제합니다" 입력 후 확인
+        alert = driver.switch_to.alert
+        print("⚠️ 확인창 발생:", alert.text)
+        alert.send_keys("삭제합니다")
+        alert.accept()
+        print("✅ '삭제합니다' 입력 후 확인 클릭 완료")
+
+        time.sleep(random.randint(1, 3))
+        print("✅ 문제집 삭제 완료. 다음 문제집으로 이동합니다...")
+
+    except Exception as e:
+        print("⚠️ 더 이상 문제집이 없거나 오류 발생. 종료합니다.")
+        print(e)
+        break
+
+driver.quit()
+print("🎉 모든 문제집 삭제 완료.")
