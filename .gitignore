@@ -1,7 +1,8 @@
 # 환경 변수
 .env
 
-# 문제 관련 코드
+# 문제 관련
+problemworkbooks_all_pages_edit.csv
 게시판 - 배열을 잘 써봅시다 댓글.txt
 문제집 목차.txt
 문제집 번호 모음.txt
