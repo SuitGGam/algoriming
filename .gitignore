@@ -4,9 +4,12 @@
 # 환경 변수
 .env
 
+# 주간 랜덤 디펜스 선정 제외 문제 목록
+random-defense/exclude_silver.txt
+random-defense/exclude_gold.txt
+
 # 문제 관련
 problemworkbooks_all_pages_edit.csv
 게시판 - 배열을 잘 써봅시다 댓글.txt
 문제집 목차.txt
-문제집 번호 모음.txt
 백준 문제집용 코드(수정본).txt
