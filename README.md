@@ -7,7 +7,7 @@
 ## :couple:그룹 가입 대상
 알고리즘/자료구조를 공부하고자 하는 모든 분들은 가입 신청이 가능합니다. [SSAFY 정보방](https://open.kakao.com/o/g9PbnPph)에서 시작한 그룹이지만 많은 분들에게 도움이 됐으면 하는 마음에 모든 분의 가입 신청을 승인하고 있습니다.
 
-> [백준 알고리밍 그룹 5](https://www.acmicpc.net/group/24302) (11월 25일 오픈)
+> [백준 알고리밍 그룹 5](https://www.acmicpc.net/group/24302) (모집 중)
 <details>
 <summary>인원 마감 그룹</summary>
 
