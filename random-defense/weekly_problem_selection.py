@@ -109,13 +109,13 @@ def main():
     exclude_numbers_gold = load_exclude_list(EXCLUDE_GOLD_PATH)
 
     queries_silver = [
-        '*s5 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math',
-        '*s4 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math',
-        '*s3 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math',
-        '*s2 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math',
-        '*s1 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math',
-        '*s s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math',
-        '*s s#201.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math'
+        '*s5 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc',
+        '*s4 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc',
+        '*s3 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc',
+        '*s2 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc',
+        '*s1 s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc',
+        '*s s#200.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc',
+        '*s s#201.. %ko -#geometry -#physics -#probability -#arbitrary_precision -#math -#ad_hoc'
     ]
 
     queries_gold = [
