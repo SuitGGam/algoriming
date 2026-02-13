@@ -21,8 +21,11 @@
 </details>
 
 ## :clipboard:업데이트 내용
-<details>
+<details open>
 <summary>2026년 1분기 (1 ~ 3월)</summary>
+
+- 2026년 2월 14일
+    - :door:여덟 개의 문 문제집 추가
 
 - 2026년 2월 11일
     - :chocolate_bar:발렌타인데이 문제집 추가
