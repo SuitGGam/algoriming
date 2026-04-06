@@ -22,6 +22,12 @@
 
 ## :clipboard:업데이트 내용
 <details open>
+<summary>2026년 2분기 (4 ~ 6월)</summary>
+
+- 2026년 4월 1일
+    - :lying_face:만우절 문제집 추가 (12문제)
+</details>
+<details>
 <summary>2026년 1분기 (1 ~ 3월)</summary>
 
 - 2026년 3월 9일
